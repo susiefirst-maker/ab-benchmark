@@ -1,0 +1,26 @@
+# Source-dataset configuration for ab-benchmark harmonization.
+#
+# Paths may be absolute or relative to the repo root. Paths starting with
+# '$' expand environment variables. Setting `enabled: false` skips the
+# source without raising an error.
+
+sources:
+  jain_2017:
+    path: ../ProtePilot/data/Jain137_Cleaned_Training_Data.csv
+    enabled: true
+
+  sabdab_thera:
+    path: ../ProtePilot/data/TheraSAbDab_SeqStruc_OnlineDownload.csv
+    enabled: true
+
+  shehata_2019:
+    path: null
+    enabled: false  # loader not yet implemented
+
+  bailly_2020:
+    path: null
+    enabled: false  # loader not yet implemented
+
+  prophet_ab:
+    path: null
+    enabled: false  # deferred to Phase 1 (wrapped by baselines.prophet_ab)
